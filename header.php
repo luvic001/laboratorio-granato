@@ -1,7 +1,8 @@
 <?php 
 
 if (!defined('PATH')) exit;
-global $TEMPLATE_DIRECTORY_URI;
+global $TEMPLATE_DIRECTORY_URI, $sitename;
+$sitename = get_bloginfo('name') . ' | ' . get_bloginfo('description');
 
 ?>
 <!DOCTYPE html>
@@ -15,6 +16,8 @@ global $TEMPLATE_DIRECTORY_URI;
   <?php wp_head() ?>
 
   <!-- Files -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script type="text/javascript" src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/jQuery.min.js"></script>
   <script type="text/javascript" src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/script.min.js"></script>
@@ -22,9 +25,26 @@ global $TEMPLATE_DIRECTORY_URI;
   <!-- / End Files -->
 
 </head>
-<body>
+<body <?= body_class() ?>>
 
+
+<main class="site-content">
 
 <header class="site-header">
-  <div class="container"></div>
+  <div class="container-fluid d-flex justify-content-between">
+    <a href="<?= site_url() ?>" class="logo-space" title="<?= $sitename ?>">
+      <img src="<?= get_image('img-lab.png') ?>" alt="<?= $sitename ?>">
+    </a>
+    <div class="menu-space">
+      <a href="#" class="btn-site btn-header" title="Resultados">Resultados</a>
+      <a href="#" class="menu-btn d-flex align-items-center no-decoration">
+        <span>Menu</span>
+        <span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+    </div>
+  </div>
 </header>

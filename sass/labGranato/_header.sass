@@ -1,0 +1,62 @@
+body
+  header.site-header
+    border-top: 5px solid $azul
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    margin: auto
+    width: 100%
+    z-index: 100
+    background-color: rgba($branco, .7)
+    padding: 12px 0
+    +default_transition()
+    +breakpoint(sm)
+      padding: 24px 1rem
+    +breakpoint(lg)
+      padding: 24px 140px
+    .logo-space
+      img
+        +default_transition()
+        height: auto
+        max-width: 130px
+        +breakpoint(sm)
+          max-width: 100%
+    .menu-space
+      display: flex
+      align-items: center
+      .menu-btn
+        margin-left: 5px
+        +breakpoint(sm)
+          margin-left: 20px
+        > span
+          text-transform: uppercase
+          color: $preto
+          font-family: $font-default
+          font-weight: 700
+          +font-size(14px)
+          margin-left: 6px
+          +breakpoint(sm)
+            margin-left: 10px
+            +font-size(20px)
+          > span
+            display: block
+            height: 3px
+            background-color: $preto
+            margin-bottom: 3px
+            width: 24px
+            +breakpoint(sm)
+              width: 30px
+            &:last-child
+              margin-bottom: 0
+  &.body-scrolled
+    header.site-header
+      background-color: $branco
+      padding: 12px 0
+      +breakpoint(md)
+        padding: 12px 140px
+      .logo-space
+        img
+          max-width: 100px
+          +breakpoint(sm)
+            max-width: 170px

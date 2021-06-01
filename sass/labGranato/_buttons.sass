@@ -1,0 +1,24 @@
+.btn-site
+  font-family: $font-default
+  font-weight: 900
+  color: $preto
+  border: 1px solid $preto
+  padding: 8px 25px
+  display: inline-block
+  +border-radius(100px)
+  text-transform: uppercase
+  +default_transition()
+  &.white-button, 
+  &:hover
+    border-color: $branco
+    color: $branco
+    background-color: $preto
+    text-decoration: none
+  &.white-button
+    &:hover
+      background-color: $branco
+      color: $preto
+  &.btn-header
+    +font-size(14px)
+    +breakpoint(sm)
+      +font-size(20px)
