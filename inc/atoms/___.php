@@ -32,7 +32,7 @@ function ___($param)
  *
  */
 
-function ___a($message = '', $case = 'error', $show_icon = true):string
+function ___a($message = '', $case = 'error', $show_icon = true)
 {
 
 	switch ($case):
@@ -64,6 +64,6 @@ function ___a($message = '', $case = 'error', $show_icon = true):string
 
 	$html = sprintf( '<div class="debug-content d-flex align-items-center %s">%s<p class="mb-0">%s</p></div>', $class->type, $icon, $message );
 	
-	return( $html );
+	echo( $html );
 
 }

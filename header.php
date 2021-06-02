@@ -27,6 +27,7 @@ $sitename = get_bloginfo('name') . ' | ' . get_bloginfo('description');
 </head>
 <body <?= body_class() ?>>
 
+<?php get_modules('mega-menu') ?>
 
 <main class="site-content">
 
@@ -37,7 +38,7 @@ $sitename = get_bloginfo('name') . ' | ' . get_bloginfo('description');
     </a>
     <div class="menu-space">
       <a href="#" class="btn-site btn-header" title="Resultados">Resultados</a>
-      <a href="#" class="menu-btn d-flex align-items-center no-decoration">
+      <a href="#" class="menu-btn d-flex align-items-center no-decoration" toggle-menu="">
         <span>Menu</span>
         <span>
           <span></span>

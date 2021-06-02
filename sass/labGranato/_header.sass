@@ -36,6 +36,7 @@ body
           font-weight: 700
           +font-size(14px)
           margin-left: 6px
+          +default_transition()
           +breakpoint(sm)
             margin-left: 10px
             +font-size(20px)
@@ -44,11 +45,19 @@ body
             height: 3px
             background-color: $preto
             margin-bottom: 3px
+            +default_transition()
             width: 24px
             +breakpoint(sm)
               width: 30px
             &:last-child
               margin-bottom: 0
+        &:hover,
+        &:focus,
+        &:active
+          > span
+            color: $azul
+            > span
+              background-color: $azul
   &.body-scrolled
     header.site-header
       background-color: $branco

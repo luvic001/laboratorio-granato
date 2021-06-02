@@ -16,12 +16,12 @@ if (!defined('PATH')) exit;
 function get( $handle = '', $ext = '.php' )
 {  
     global $TEMPLATE_DIRECTORY;
-    if (file_exists($TEMPLATE_DIRECTORY . '/src/' . $handle . $ext)){
-        require ( $TEMPLATE_DIRECTORY . '/src/' . $handle . $ext);
+    if (file_exists($TEMPLATE_DIRECTORY . '/' . $handle . $ext)){
+        require ( $TEMPLATE_DIRECTORY . '/' . $handle . $ext);
         return true;
     }
     else {
-        ___a(sprintf('O arquivo <em>%s</em> não foi encontrado', $handle));
+        ___a(sprintf('O arquivo <em>%s</em> não foi encontrado', $handle . $ext));
         return false;
     }
 }

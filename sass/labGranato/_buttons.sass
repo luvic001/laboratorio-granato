@@ -8,14 +8,19 @@
   +border-radius(100px)
   text-transform: uppercase
   +default_transition()
-  &.white-button, 
-  &:hover
-    border-color: $branco
+  &:hover, 
+  &:focus
+    border-color: $azul
     color: $branco
-    background-color: $preto
+    background-color: $azul
     text-decoration: none
+    border-color: $azul
   &.white-button
-    &:hover
+    background-color: rgba($preto, 0)
+    color: $branco
+    border-color: $branco
+    &:hover,
+    &:focus
       background-color: $branco
       color: $preto
   &.btn-header
