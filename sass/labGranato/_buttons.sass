@@ -3,11 +3,18 @@
   font-weight: 900
   color: $preto
   border: 1px solid $preto
-  padding: 8px 25px
-  display: inline-block
+  padding: 8px 16px
+  display: inline-flex
+  align-items: center
+  justify-content: center
   +border-radius(100px)
   text-transform: uppercase
   +default_transition()
+  svg
+    width: 32px
+    height: 32px
+    fill: $preto
+    margin-left: 8px
   &:hover, 
   &:focus
     border-color: $azul
@@ -15,14 +22,20 @@
     background-color: $azul
     text-decoration: none
     border-color: $azul
+    svg
+      fill: $branco
   &.white-button
     background-color: rgba($preto, 0)
     color: $branco
     border-color: $branco
+    svg
+      fill: $branco
     &:hover,
     &:focus
       background-color: $branco
       color: $preto
+      svg
+        fill: $preto
   &.btn-header
     +font-size(14px)
     +breakpoint(sm)
