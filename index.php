@@ -9,5 +9,6 @@ get_modules('about-us', 'home');
 get_modules('testes', 'home');
 get_modules('testes-carousel', 'home');
 get_modules('resultados', 'home');
+get_modules('contato', 'home');
 
 get_footer();

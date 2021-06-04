@@ -1,0 +1,39 @@
+.btn-contato
+  display: inline-flex
+  align-items: center
+  background-color: #ffffff
+  justify-content: center
+  align-items: center
+  font-weight: 700
+  font-family: $font-default
+  color: $azul
+  padding: 10px 1rem
+  +border-radius(100px)
+  width: 260px
+  height: 45px
+  +font-size(18px)
+  +breakpoint(sm)
+    +font-size(16px)
+    height: 45px
+    width: 220px
+  +breakpoint(md)
+    height: 45px
+    width: 260px
+    +font-size(18px)
+  &:hover
+    text-decoration: none
+    color: $azul
+  svg
+    margin-right: 8px
+    width: 20px
+    height: 20px
+  &.btn-azul
+    width: 260px
+    height: 45px
+    +font-size(22px)
+    color: $branco
+    background-color: $azul
+.whatsapp-phones
+  flex-wrap: wrap
+  +breakpoint(sm)
+    flex-wrap: nowrap
