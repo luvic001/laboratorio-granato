@@ -1,0 +1,53 @@
+section.about-us
+  &.site-sections
+    padding-bottom: 100px
+  .section-title
+    margin-top: 50px
+  figure.about-us
+    margin-top: 0px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    position: relative
+    height: 100%
+    .eclipse-minor,
+    .eclipse-major
+      position: absolute
+      display: none
+      +breakpoint(md)
+        display: block
+      svg
+        max-width: 100%
+        height: auto
+    .eclipse-minor
+      right: 0
+      +breakpoint(sm)
+        top: 85px
+      +breakpoint(lg)
+        top: 0
+      svg
+        +breakpoint(md)
+          width: 240px
+          height: 240px
+        +breakpoint(lg)
+          width: 300px
+          height: 300px
+    .eclipse-major
+      +breakpoint(md)
+        bottom: 75px
+        left: 25px
+      +breakpoint(lg)
+        bottom: -15px
+        left: 15px
+      svg
+        +breakpoint(md)
+          width: 400px
+          height: 400px
+        +breakpoint(lg)
+          width: 600px
+          height: 600px
+    img
+      height: auto
+      max-width: 100%
+      +breakpoint(md)
+        max-width: 90%

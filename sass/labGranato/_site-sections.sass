@@ -1,0 +1,58 @@
+.section-lateral-paddings
+  padding-left: 20px
+  padding-right: 20px
+  +breakpoint(md)
+    padding-left: 20px
+    padding-right: 20px
+  +breakpoint(1440px)
+    padding-right: 35px
+    padding-left: 35px
+  +breakpoint(1550px)
+    padding-right: 105px
+    padding-left: 105px
+  +breakpoint(1780px)
+    padding-right: 215px
+    padding-left: 215px
+section.site-sections
+  padding-top: 85px 
+  padding-bottom: 85px 
+  background-color: $branco
+  .section-title
+    position: relative
+    padding-top: 30px
+    margin-bottom: 15px
+    &:before,
+    &:after
+      content: ''
+      width: 12px
+      height: 12px
+      +border-radius(10px)
+      background-color: $azul
+      margin-bottom: 10px
+      position: absolute
+    &:before
+      top: -20px
+    &:after
+      top: 0px
+      
+    h2
+      text-transform: uppercase
+      font-weight: 700
+      +font-size(24px)
+      +breakpoint(lg)
+        +font-size(32px)
+      span
+        color: $azul
+        font-weight: 900
+        +font-size(68px)
+        +breakpoint(lg)
+          +font-size(83px)
+
+.editor-content
+  p
+    margin-bottom: 35px
+    +font-size(18px)
+    line-height: 26px
+    color: $preto
+    &.medium
+      font-weight: 500

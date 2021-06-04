@@ -13,8 +13,14 @@ body
     +default_transition()
     +breakpoint(sm)
       padding: 24px 1rem
-    +breakpoint(lg)
-      padding: 24px 140px
+    +breakpoint(md)
+      padding: 24px 20px
+    +breakpoint(1440px)
+      padding: 24px 30px
+    +breakpoint(1550px)
+      padding: 24px 95px
+    +breakpoint(1780px)
+      padding: 24px 200px
     .logo-space
       img
         +default_transition()
@@ -62,8 +68,15 @@ body
     header.site-header
       background-color: $branco
       padding: 12px 0
+      +shadow(0px 0px 5px #444)
       +breakpoint(md)
-        padding: 12px 140px
+        padding: 12px 20px
+      +breakpoint(1440px)
+        padding: 12px 30px
+      +breakpoint(1550px)
+        padding: 12px 95px
+      +breakpoint(1780px)
+        padding: 12px 200px
       .logo-space
         img
           max-width: 100px
