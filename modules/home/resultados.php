@@ -4,8 +4,18 @@ if (!defined('PATH')) exit;
 
 ?>
 
-<section class="about-us site-sections" id="resultados">
-
+<section class="about-us site-sections is-relative" id="resultados" style="overflow: initial;">
+  <div class="floating-eclipses">
+    <div class="eclipse-btn-01">
+      <?= svg('eclipse-btn-01') ?>
+    </div> 
+    <div class="eclipse-btn-02">
+      <?= svg('eclipse-btn-02') ?>
+    </div> 
+    <div class="eclipse-btn-03">
+      <?= svg('eclipse-btn-03') ?>
+    </div> 
+  </div>
   <div class="container">
     <div class="section-title">
       <h2>RESULTADOS RÁPIDOS <br> <span>EXAMES DE ROTINA</span></h2>
