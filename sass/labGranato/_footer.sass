@@ -1,0 +1,31 @@
+footer.site-footer
+  padding: 12px 0
+  background-color: $azul
+  +default_transition()
+  +font-size(16px)
+  +breakpoint(sm)
+    padding: 24px 1rem
+  +breakpoint(md)
+    padding: 24px 20px
+  +breakpoint(1440px)
+    padding: 24px 30px
+  +breakpoint(1550px)
+    padding: 24px 95px
+  +breakpoint(1780px)
+    padding: 24px 200px
+  p
+    color: $branco
+    &.copyright
+      svg
+        margin-right: 10px
+    svg
+      fill: $branco
+    a
+      &.icon 
+        margin-left: 10px
+        +breakpoint(md)
+          margin-left: 20px
+        &:first-child
+          margin-left: 0px
+          +breakpoint(md)
+            margin-left: 20px

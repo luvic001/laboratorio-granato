@@ -4,7 +4,7 @@ if (!defined('PATH')) exit;
 
 ?>
 
-<section class="about-us site-sections" id="about-us">
+<section class="about-us site-sections" id="resultados">
 
   <div class="container">
     <div class="section-title">

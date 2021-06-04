@@ -41,7 +41,7 @@ $testes = to_object([
 
 ?>
 
-<section class="site-sections pb-5" style="background-color: #F2F8F8;">
+<section class="site-sections pb-5" style="background-color: #F2F8F8;" id="testes-para-covid-19">
   <div class="container">
     <div class="section-title align-center">
       <h2>TESTES PARA <br><span>COVID-19</span></h2>

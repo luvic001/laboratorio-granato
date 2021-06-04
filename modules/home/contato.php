@@ -4,7 +4,7 @@ if (!defined('PATH')) exit;
 
 ?>
 
-<section class="site-sections contato pb-5" style="background-color: #F2F8F8;">
+<section class="site-sections contato pb-5" style="background-color: #F2F8F8;" id="contato">
   <div class="container">
   
     <div class="section-title align-center">
