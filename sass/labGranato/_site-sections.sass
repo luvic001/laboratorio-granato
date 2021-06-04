@@ -154,3 +154,25 @@ section.site-sections
     +breakpoint(sm)
       line-height: 32px
       +font-size(26px)
+
+.list-site
+  ul
+    li
+      color: $preto
+      line-height: 22px
+      font-weight: 700
+      margin-bottom: 10px
+      +padding-start(24px)
+      position: relative
+      +font-size(14px)
+      +breakpoint(sm)
+        +font-size(16px)
+      &:before
+        content: ''
+        width: 8px
+        height: 8px
+        background-color: $azul
+        left: 0px
+        position: absolute
+        top: 5px
+        +border-radius(100px)
