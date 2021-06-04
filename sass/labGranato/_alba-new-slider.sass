@@ -1,0 +1,126 @@
+.carousel-granato
+    display: flex
+    position: relative
+    
+    .item-image
+        .image
+            position: relative
+            overflow: hidden
+            max-height: 560px
+            .color-base
+                position: absolute
+                top: 0
+                left: 0
+            .image-layer
+                position: absolute
+                z-index: 1
+                background-size: cover
+                background-position: center
+                left: 0
+    .item
+        overflow: hidden
+        display: flex
+        width: 100%
+        position: relative
+        +breakpoint(sm)
+            height: auto
+            width: 50%
+        .controller
+            position: absolute
+            bottom: 0
+            left: 55px
+            margin-bottom: 55px
+            +less-breakpoint(md)
+                margin-bottom: 18px
+                left: 0
+                width: 100%
+                text-align: center
+            ul
+                li
+                    display: inline-block
+                    border: 1px solid $branco
+                    height: 10px
+                    +border-radius(5px)
+                    margin-left: 5px
+                    cursor: pointer
+                    width: 10px
+                    background-color: $branco
+                    +default_transition()
+                    &:first-child
+                        margin-left: 0px
+                    &.active
+                        width: 32px
+                        cursor: default
+        .body-items
+            display: flex
+            width: 100%
+            overflow: hidden
+        .content
+            display: inline-block
+            position: relative
+            background-color: #a44b9b
+            padding: 1.5rem
+            min-height: 400px
+            +breakpoint(sm)
+                min-height: 420px
+            +breakpoint(md)
+                min-height: 500px
+                padding: 70px 55px
+                padding-right: 10vw
+            +less-breakpoint(767px)
+                width: 100% !important
+            *
+                color: $branco
+            h2
+                +font-size(32px)
+                +breakpoint(lg)
+                    max-width: 83%
+            h1, h2, h3, h4, h5, h6, a, p, .icon
+                font-weight: 300
+                display: block
+                margin-bottom: 25px
+            h2
+                font-weight: 900
+            p
+                line-height: 26px
+                color: $preto
+                +font-size(18px)
+                font-weight: 500
+            strong
+                font-weight: 700 !important
+            a:link
+                color: #fff
+                display: flex
+                .white-arrow
+                    color: $branco
+                    *
+                        color: $branco
+                svg
+                    +font-size(25px)
+                    margin-top: -1px
+                    margin-left: 10px
+                *
+                    color: #fff
+            .content-base
+                position: relative
+                z-index: 10
+                width: 100%
+                max-width: 610px
+                p
+                    margin-bottom: 0
+                    &:last-of-type
+                        margin-bottom: 30px
+                        +breakpoint(md)
+                            margin-bottom: 60px
+            .color-base
+                z-index: 0
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+
+
+    .item-image.item
+        +less-breakpoint(767px)
+            width: 0% !important

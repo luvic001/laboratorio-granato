@@ -1,6 +1,6 @@
 .section-lateral-paddings
-  padding-left: 20px
-  padding-right: 20px
+  padding-left: 0
+  padding-right: 0
   +breakpoint(md)
     padding-left: 20px
     padding-right: 20px
@@ -14,13 +14,16 @@
     padding-right: 215px
     padding-left: 215px
 section.site-sections
-  padding-top: 85px 
-  padding-bottom: 85px 
   background-color: $branco
+  padding-top: 45px 
+  padding-bottom: 45px 
+  +breakpoint(sm)
+    padding-top: 85px 
+    padding-bottom: 85px 
   .section-title
     position: relative
-    padding-top: 30px
     margin-bottom: 15px
+    padding-top: 30px
     &:before,
     &:after
       content: ''
@@ -34,19 +37,48 @@ section.site-sections
       top: -20px
     &:after
       top: 0px
-      
+    &.align-center
+      &:before,
+      &:after
+        left: 0
+        right: 0
+        margin: auto
+      &:before
+        top: 0
+        left: -20px
+      &:after
+        right: -20px
+
     h2
       text-transform: uppercase
       font-weight: 700
-      +font-size(24px)
+      +font-size(18px)
+      +breakpoint(sm)
+        +font-size(24px)
       +breakpoint(lg)
         +font-size(32px)
       span
         color: $azul
         font-weight: 900
-        +font-size(68px)
+        +font-size(42px)
+        +breakpoint(md)
+          +font-size(68px)
         +breakpoint(lg)
           +font-size(83px)
+  .section-description
+    max-width: 300px
+    margin: 0 auto
+    line-height: 22px
+    margin-bottom: 30px
+    +breakpoint(sm)
+      margin-bottom: 60px
+      max-width: initial
+    p
+      color: $preto
+      font-weight: 500
+      +font-size(18px)
+      +breakpoint(sm)
+        +font-size(24px)
 
 .editor-content
   p
@@ -56,3 +88,69 @@ section.site-sections
     color: $preto
     &.medium
       font-weight: 500
+
+.test-table
+  margin-bottom: 2rem
+  ul
+    border-bottom: 1px solid $azul
+    align-items: center
+    li
+      font-weight: 500
+      padding-bottom: 3px
+      padding-top: 3px
+      line-height: 20px
+      +font-size(14px)
+      +breakpoint(sm)
+        line-height: 24px
+        +font-size(16px)
+        padding-bottom: 25px
+        padding-top: 25px
+      &:first-child
+        color: $azul
+        font-weight: 900
+        padding-top: 20px
+        +font-size(20px)
+        line-height: 24px
+        +breakpoint(sm)
+          line-height: 22px
+          +font-size(18px)
+          padding-top: 25px
+      &:last-child
+        padding-bottom: 20px
+        +breakpoint(sm)
+          padding-bottom: 25px
+      &:nth-child(2)
+        &:before
+          content: 'Quando Fazer: '
+          font-weight: 700
+          +breakpoint(sm)
+            content: initial
+      &:last-child
+        &:before
+          content: 'Prazo: '
+          font-weight: 700
+          +breakpoint(sm)
+            content: initial
+    &.first-table
+      border-bottom: initial
+      display: none
+      +breakpoint(sm)
+        display: flex
+      li
+        padding-bottom: 10px
+        text-transform: uppercase
+        color: $preto
+        font-weight: 500
+        +font-size(20px)
+        &:before
+          content: initial
+
+.featured-text
+  p
+    color: $azul
+    font-weight: 700
+    line-height: 30px
+    +font-size(24px)
+    +breakpoint(sm)
+      line-height: 32px
+      +font-size(26px)
