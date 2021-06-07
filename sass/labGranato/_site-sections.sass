@@ -91,9 +91,36 @@ section.site-sections
 
 .test-table
   margin-bottom: 2rem
+  display: flex
+  flex-wrap: nowrap
+  overflow-x: auto
+  padding-bottom: 1rem
+  +breakpoint(sm)
+    overflow-x: hidden
+    display: block
   ul
-    border-bottom: 1px solid $azul
     align-items: center
+    min-width: 240px
+    height: 100%
+    display: block !important
+    margin-left: 0 !important
+    margin-right: 15px !important
+    min-height: 220px
+    background-color: $branco
+    border-radius: 8px
+    overflow: hidden
+    position: relative
+    +breakpoint(sm)
+      border-radius: 0
+      overflow: initial
+      min-height: initial
+      margin-left: -15px !important
+      margin-right: -15px !important
+      display: flex !important
+      height: auto
+      border-bottom: 1px solid $azul
+      background-color: rgba($preto, 0)
+      min-width: initial
     li
       font-weight: 500
       padding-bottom: 3px
@@ -106,25 +133,39 @@ section.site-sections
         padding-bottom: 25px
         padding-top: 25px
       &:first-child
-        color: $azul
-        font-weight: 900
-        padding-top: 20px
-        +font-size(20px)
-        line-height: 24px
+        font-weight: 700
+        color: $branco
+        background-color: $azul
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 10px
+        padding-bottom: 10px
+        height: 65px
+        margin-bottom: 15px
+        text-align: center
+        +font-size(14px)
+        line-height: 18px
         +breakpoint(sm)
+          line-height: 24px
+          text-align: left
+          margin-bottom: 0
+          height: auto
+          font-weight: 900
+          display: block
+          color: $azul
+          background-color: rgba($preto, 0)
           line-height: 22px
           +font-size(18px)
+          padding-bottom: 25px
           padding-top: 25px
       &:last-child
         padding-bottom: 20px
+        position: absolute
+        bottom: 0
         +breakpoint(sm)
+          position: relative
           padding-bottom: 25px
-      &:nth-child(2)
-        &:before
-          content: 'Quando Fazer: '
-          font-weight: 700
-          +breakpoint(sm)
-            content: initial
       &:last-child
         &:before
           content: 'Prazo: '
@@ -133,9 +174,9 @@ section.site-sections
             content: initial
     &.first-table
       border-bottom: initial
-      display: none
+      display: none !important
       +breakpoint(sm)
-        display: flex
+        display: flex !important
       li
         padding-bottom: 10px
         text-transform: uppercase
