@@ -12,7 +12,7 @@ $repeat = 1;
 
       <?php $ind=0; for ($i = 0; $i < $repeat; $i++): ?>
         <div class="carousel-item <?= ($i == 0) ? 'active' : null ?>">
-          <div class="background-container" data-background="<?= get_image('hero-01.png') ?>"></div>
+          <div class="background-container background-parallax-ctrl background-container-<?= $i ?>" data-images="<?= get_image('hero-mobile.png') ?>|<?= get_image('hero-01.png') ?>|.background-container-<?=$i?>"></div>
           <div class="section-lateral-paddings h-100">
             <div class="container-fluid d-flex align-items-center h-100">
               <div class="slide-wrapper">

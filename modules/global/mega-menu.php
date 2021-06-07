@@ -21,9 +21,14 @@ if (!defined('PATH')) exit;
     <div class="social-network">
       <h3>Siga:</h3>
       <ul>
-        <li><a href="#" title="Instagram"><?= svg('instagram') ?></a></li>
-        <li><a href="#" title="Facebook"><?= svg('facebook') ?></a></li>
-        <li><a href="#" title="LinkedIn"><?= svg('linkedin') ?></a></li>
+        <li><a href="https://www.instagram.com/labgranatooficial/" target="_blank" title="Laboratório Granato | Instagram" class="d-flex align-items-center"><?= svg('instagram') ?> Instagram</a></li>
+        <?php 
+        /**
+         * @deprecated
+          <li><a href="#" title="Facebook"><?= svg('facebook') ?></a></li>
+          <li><a href="#" title="LinkedIn"><?= svg('linkedin') ?></a></li>
+        */ 
+        ?>
       </ul>
     </div>
 

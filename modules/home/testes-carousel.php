@@ -6,7 +6,7 @@ $testes = to_object([
     'title' => 'TESTE SUA EMPRESA',
     'content' => 'O Laboratório Granato possui ampla experiência em testagem empresarial. Dispomos de logística de coleta no local de melhor conveniência para o seu time. Nossa equipe altamente capacitada para realizar todo procedimento segurança e discrição.',
     'color' => '#189BDB',
-    'image' => get_image('img-teste-casa-slide-3.png'),
+    'image' => get_image('img-teste-empresa.png'),
     'btn-text' => 'ENTRE EM CONTATO CONOSCO',
     'btn-link' => '#contato'
   ],
@@ -17,7 +17,16 @@ $testes = to_object([
     'image' => get_image('img-teste-evento-slide-2.png'),
     'btn-text' => 'ENTRE EM CONTATO CONOSCO',
     'btn-link' => '#contato'
-  ]
+  ],
+  [
+    'title' => 'ATENDIMENTO DOMICILIAR',
+    'content' => 'Faça seus exames no conforto da sua casa. Disponibilizamos atendimento domiciliar com equipe capacitada para realizar exames com discrição e profissionalismo. <br>Para mais informações sobre este serviço, entre em contato conosco.',
+    'color' => '#189BDB',
+    'image' => get_image('img-teste-casa-slide-3.png'),
+    'btn-text' => 'ENTRE EM CONTATO CONOSCO',
+    'btn-link' => '#contato'
+  ],
+  
 
 ]);
 

@@ -37,7 +37,7 @@ $sitename = get_bloginfo('name') . ' | ' . get_bloginfo('description');
       <img src="<?= get_image('img-lab.png') ?>" alt="<?= $sitename ?>">
     </a>
     <div class="menu-space">
-      <a href="#resultados" class="btn-site btn-header" title="Resultados">Resultados</a>
+      <a href="http://seulaudo.com.br/granato" target="_blank" class="btn-site btn-header" title="Resultados">Resultados</a>
       <a href="#" class="menu-btn d-flex align-items-center no-decoration" toggle-menu="">
         <span>Menu</span>
         <span>

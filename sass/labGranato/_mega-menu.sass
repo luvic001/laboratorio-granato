@@ -76,6 +76,7 @@ section.mega-menu
               +default_transition()
               background-color: rgba($preto, 0)
             &:hover
+              color: $azul
               text-decoration: none
               background-color: #f2f2f2
               &:before
@@ -93,11 +94,18 @@ section.mega-menu
         li
           margin-right: 15px
           a
+            color: $preto
+            font-weight: 700
+            +default_transition()
+            &:hover
+              color: $azul
+              text-decoration: none
             svg
               fill: $preto
               +default_transition()
               width: 32px
               height: 32px
+              margin-right: 10px
             &:hover
               svg
                 fill: $azul
