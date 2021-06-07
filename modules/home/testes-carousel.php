@@ -11,21 +11,13 @@ $testes = to_object([
     'btn-link' => '#contato'
   ],
   [
-    'title' => 'TESTE SUA EMPRESA',
-    'content' => 'O Laboratório Granato possui ampla experiência em testagem empresarial. Dispomos de logística de coleta no local de melhor conveniência para o seu time. Nossa equipe altamente capacitada para realizar todo procedimento segurança e discrição.',
+    'title' => 'TESTE SEU EVENTO',
+    'content' => 'O Laboratório Granato oferece serviço de testagem para eventos, garantindo a segurança dos seus convidados e colaboradores. <br> Para mais informações, entre em contato conosco.',
     'color' => '#189BDB',
     'image' => 'https://albasaude.com.br/wp-content/uploads/2020/02/destaque-image-01.jpg',
     'btn-text' => 'ENTRE EM CONTATO CONOSCO',
     'btn-link' => '#contato'
-  ],
-  [
-    'title' => 'TESTE SUA EMPRESA',
-    'content' => 'O Laboratório Granato possui ampla experiência em testagem empresarial. Dispomos de logística de coleta no local de melhor conveniência para o seu time. Nossa equipe altamente capacitada para realizar todo procedimento segurança e discrição.',
-    'color' => '#189BDB',
-    'image' => 'https://albasaude.com.br/wp-content/uploads/2020/02/destaque-image-01.jpg',
-    'btn-text' => 'ENTRE EM CONTATO CONOSCO',
-    'btn-link' => '#contato'
-  ],
+  ]
 
 ]);
 
