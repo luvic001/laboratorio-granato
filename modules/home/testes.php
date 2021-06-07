@@ -61,6 +61,9 @@ $testes = to_object([
         <li class="col-md-3"><?= $t->teste ?></li>
         <li class="col-md-7"><?= $t->quando ?></li>
         <li class="col-md-2"><?= $t->prazo ?></li>
+        <li class="col-12 d-block d-md-none">
+          <a href="#contato" class="btn-site blue-button btn-full">Agendar exame</a>
+        </li>
       </ul>
       <?php endforeach ?>
       
