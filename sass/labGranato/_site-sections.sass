@@ -15,9 +15,9 @@
     padding-left: 215px
 section.site-sections
   background-color: $branco
-  padding-top: 45px 
+  padding-top: 30px 
   padding-bottom: 45px 
-  +breakpoint(sm)
+  +breakpoint(md)
     padding-top: 85px 
     padding-bottom: 85px 
   .section-title
@@ -52,19 +52,19 @@ section.site-sections
     h2
       text-transform: uppercase
       font-weight: 700
-      +font-size(18px)
+      +font-size(16px)
       +breakpoint(sm)
-        +font-size(24px)
+        +font-size(18px)
       +breakpoint(lg)
-        +font-size(32px)
+        +font-size(22px)
       span
         color: $azul
         font-weight: 900
         +font-size(42px)
-        +breakpoint(md)
-          +font-size(68px)
+        +breakpoint(sm)
+          +font-size(52px)
         +breakpoint(lg)
-          +font-size(83px)
+          +font-size(72px)
   .section-description
     max-width: 300px
     margin: 0 auto
@@ -197,23 +197,31 @@ section.site-sections
       +font-size(26px)
 
 .list-site
-  ul
-    li
-      color: $preto
-      line-height: 22px
-      font-weight: 700
-      margin-bottom: 10px
-      +padding-start(24px)
-      position: relative
-      +font-size(14px)
-      +breakpoint(sm)
-        +font-size(16px)
-      &:before
-        content: ''
-        width: 8px
-        height: 8px
-        background-color: $azul
-        left: 0px
-        position: absolute
-        top: 5px
-        +border-radius(100px)
+  display: block
+  +breakpoint(xs)
+    display: flex
+  div
+    height: fit-content
+    ul
+      li
+        color: $preto
+        line-height: 22px
+        font-weight: 700
+        position: relative
+        +font-size(14px)
+        margin-bottom: 3px
+        +padding-start(24px)
+        +breakpoint(xs)
+          margin-bottom: 10px
+          +font-size(16px)
+        &:before
+          content: ''
+          background-color: $azul
+          left: 0px
+          position: absolute
+          +border-radius(100px)
+          height: 8px
+          width: 8px
+          top: 6px
+          +breakpoint(xs)
+            top: 5px

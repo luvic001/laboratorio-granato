@@ -12,29 +12,30 @@ body
     padding: 12px 0
     +default_transition()
     +breakpoint(sm)
-      padding: 24px 1rem
+      padding: 15px 1rem
     +breakpoint(md)
-      padding: 24px 1rem
+      padding: 15px 1rem
     +breakpoint(1440px)
-      padding: 24px 1rem
+      padding: 15px 1rem
     +breakpoint(1550px)
-      padding: 24px 1rem
+      padding: 15px 1rem
     +breakpoint(1780px)
-      padding: 24px 1rem
+      padding: 15px 1rem
     .logo-space
+      +flex-center-center()
       img
         +default_transition()
         height: auto
         max-width: 100px
         +breakpoint(sm)
-          max-width: 130px
+          max-width: 140px
     .menu-space
       display: flex
       align-items: center
       .menu-btn
         margin-left: 5px
         +breakpoint(sm)
-          margin-left: 20px
+          margin-left: 10px
         > span
           text-transform: uppercase
           color: $preto
@@ -45,7 +46,7 @@ body
           +default_transition()
           +breakpoint(sm)
             margin-left: 10px
-            +font-size(18px)
+            +font-size(16px)
           > span
             display: block
             height: 3px

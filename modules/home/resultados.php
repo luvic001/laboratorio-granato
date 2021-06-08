@@ -24,7 +24,7 @@ if (!defined('PATH')) exit;
       <div class="col-12 editor-content mb-3 mb-md-4">
         <p>Realizamos ampla gama de exames laboratoriais para o mesmo dia. <br/>Confira abaixo.</p>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-lg-3 col-sm-6">
         <ul>
           <li>HEMOGRAMA</li> 
           <li>RETICULÓCITOS </li> 
@@ -37,7 +37,7 @@ if (!defined('PATH')) exit;
           <li>GLICOSE</li>
         </ul>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-lg-3 col-sm-6">
         <ul>
           <li> UREIA </li>
           <li>CREATININA </li>
@@ -50,7 +50,7 @@ if (!defined('PATH')) exit;
           <li>PROTEINAS TOTAIS E FRAÇÕES</li>
         </ul>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-lg-3 col-sm-6">
         <ul> 
           <li>BILIRRUBINAS </li>
           <li>COLESTEROL TOTAL E FRAÇÕES </li>
@@ -62,7 +62,7 @@ if (!defined('PATH')) exit;
           <li>CKMB</li>
         </ul>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-lg-3 col-sm-6">
         <ul> 
           <li>FERRO </li>
           <li>TRANSFERRINA </li>
