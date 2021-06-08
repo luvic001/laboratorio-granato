@@ -8,7 +8,8 @@ $testes = to_object([
     'color' => '#189BDB',
     'image' => get_image('img-teste-empresa.png'),
     'btn-text' => 'ENTRE EM CONTATO CONOSCO',
-    'btn-link' => '#contato'
+    'btn-link' => '#contato',
+    'css_class' => 'bt_entre_em_contato_empresa'
   ],
   [
     'title' => 'TESTE SEU EVENTO',
@@ -16,7 +17,8 @@ $testes = to_object([
     'color' => '#189BDB',
     'image' => get_image('img-teste-evento-slide-2.png'),
     'btn-text' => 'ENTRE EM CONTATO CONOSCO',
-    'btn-link' => '#contato'
+    'btn-link' => '#contato',
+    'css_class' => 'bt_entre_em_contato_evento'
   ],
   [
     'title' => 'ATENDIMENTO DOMICILIAR',
@@ -24,7 +26,8 @@ $testes = to_object([
     'color' => '#189BDB',
     'image' => get_image('img-teste-casa-slide-3.png'),
     'btn-text' => 'ENTRE EM CONTATO CONOSCO',
-    'btn-link' => '#contato'
+    'btn-link' => '#contato',
+    'css_class' => 'bt_entre_em_contato_domiciliar'
   ],
   
 
@@ -56,7 +59,7 @@ if ($testes):
             <h2><?= $t->title ?></h2>
             <p><?= $t->content ?></p>
             <?php if ($t->{'btn-link'}): ?>
-            <a href="<?= $t->{'btn-link'} ?>" class="btn-site big-button"><span style="color: <?= $t->color ?>;"><?= $t->{'btn-text'} ?? 'Saiba mais' ?></span></a>
+            <a href="<?= $t->{'btn-link'} ?>" class="btn-site big-button <?= $t->css_class ?>"><span style="color: <?= $t->color ?>;"><?= $t->{'btn-text'} ?? 'Saiba mais' ?></span></a>
             <?php endif; ?>
           </div>
         </div>
