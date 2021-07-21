@@ -12,8 +12,7 @@
         Siga o Laboratório Granato nas redes sociais
       </span>  
       <span class="d-block align-center">
-        <a class="icon" href="#" target="_blank"><?= svg('instagram') ?></a>
-        <a class="icon" href="#" target="_blank"><?= svg('facebook') ?></a>
+        <a class="icon bt_instagram" href="https://www.instagram.com/labgranatooficial/" target="_blank"><?= svg('instagram') ?></a>
       </span>
     </p>
   </div>
