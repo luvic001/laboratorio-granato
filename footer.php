@@ -48,7 +48,7 @@
   }
 
   footer.site-footer {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
   @media (min-width: 992px) {
     footer.site-footer {
@@ -84,18 +84,16 @@ jQuery(function($){
 <footer class="site-footer">
 
   <div class="container-fluid d-lg-flex d-block justify-content-between">
+    <p class="d-lg-flex justify-content-center align-items-center justify-content-lg-end">
+      <span class="d-flex align-items-center justify-content-center justify-content-lg-start mb-3 mb-lg-0 align-center">
+        <a class="icon bt_instagram mr-2" href="https://www.instagram.com/labgranatooficial/" target="_blank"><?= svg('instagram') ?></a>
+        Siga o Laboratório Granato no Instagram
+      </span>  
+    </p>
     <p class="d-flex mb-3 mb-lg-0 justify-content-center justify-content-lg-start align-items-center copyright">
       <?= svg('copyright') ?>
       2021 - Todos os direitos reservados.
     </p> 
-    <p class="d-lg-flex justify-content-center align-items-center justify-content-lg-end">
-      <span class="d-block align-center mb-3 mb-lg-0">
-        Siga o Laboratório Granato nas redes sociais
-      </span>  
-      <span class="d-block align-center">
-        <a class="icon bt_instagram" href="https://www.instagram.com/labgranatooficial/" target="_blank"><?= svg('instagram') ?></a>
-      </span>
-    </p>
   </div>
 
 </footer>
