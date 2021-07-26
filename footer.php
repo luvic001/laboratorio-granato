@@ -90,10 +90,13 @@ jQuery(function($){
         Siga o Laboratório Granato no Instagram
       </span>  
     </p>
-    <p class="d-flex mb-3 mb-lg-0 justify-content-center justify-content-lg-start align-items-center copyright">
-      <?= svg('copyright') ?>
-      2021 - Todos os direitos reservados.
-    </p> 
+    <div>
+      <p class="d-flex mb-3 justify-content-center justify-content-lg-start align-items-center copyright">
+        <?= svg('copyright') ?>
+        2021 - Todos os direitos reservados.
+      </p>
+      <p class="align-center">Laboratório Granato - CNPJ: 31.466.798/0001-95</p> 
+    </div>
   </div>
 
 </footer>
