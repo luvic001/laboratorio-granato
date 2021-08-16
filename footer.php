@@ -74,7 +74,7 @@ jQuery(function($){
     $('body').addClass('do-not-show-whatsapp-footer-number')
              .addClass('pwd-dialog-open')
              .removeClass('show-whatsapp-footer-number');
-
+    send_meta('bt_whatsapp_flutuante', 'bt_whatsapp_flutuante', 'bt_whatsapp_flutuante');
   });
   window.setTimeout(()=>{
     $('body').addClass('show-whatsapp-footer-number')

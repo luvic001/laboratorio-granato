@@ -7,7 +7,7 @@ if (!defined('PATH')) exit;
 <section class="powerzap-gra">
   <div class="glass"></div>
   <div class="content">
-    <a class="pwz-toggle" pwd-toggle href="#">Converse conosco
+    <a class="pwz-toggle" pwd-toggle href="#">Fale pelo WhatsApp
       <span></span>
     </a>
     <form powerzap-form="">
@@ -18,6 +18,10 @@ if (!defined('PATH')) exit;
       <p>E-mail</p>
       <div class="input-text">
         <input type="email" name="pwz_email" id="pwz_email" required="">
+      </div>
+      <p>Telefone</p>
+      <div class="input-text">
+        <input type="tel" name="pwz_phone" id="pwz_phone" mask="cel" placeholder="DDD + Telefone" required="">
       </div>
       <p>Mensagem (opcional)</p>
       <div class="input-text mb-4">
@@ -31,7 +35,7 @@ if (!defined('PATH')) exit;
       </p>
       
       <div class="input-submit pwz-footer">
-        <input type="submit" value="Iniciar chat">
+        <input type="submit" value="Iniciar Atendimento">
       </div>
 
     </form>

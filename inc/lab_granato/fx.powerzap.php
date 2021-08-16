@@ -6,7 +6,8 @@ function call_powerzap() {
 
   $nome = strip_tags($_POST['pwz_name']);
   $email = strip_tags($_POST['pwz_email']);
-  $telefone = strip_tags($_POST['pwz_message']);
+  $telefone = only_number($_POST['pwz_phone']);
+  $mensagem = strip_tags($_POST['pwz_message']);
 
   if (!$nome) $err[] = [
     'field' => 'pwz_name',
@@ -18,12 +19,22 @@ function call_powerzap() {
     'content' => 'O nome deve conter no mínimo 3 caracteres'
   ];
 
+  if (!$telefone) $err[] = [
+    'field' => 'pwz_phone',
+    'content' => 'O telefone é obrigatório'
+  ];
+
+  elseif (!is_phone($telefone)) $err[] = [
+    'field' => 'pwz_phone',
+    'content' => 'Telefone inválido'
+  ];
+
   if (!$email) $err[] = [
     'field' => 'pwz_email',
     'content' => 'O email é obrigatório'
   ];
 
-  elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) $err[] = [
+  elseif (!is_email($email)) $err[] = [
     'field' => 'pwz_email',
     'content' => 'E-mail inválido.'
   ];
@@ -33,7 +44,8 @@ function call_powerzap() {
     $powerzap = new powerzap;
     $powerzap->set_nome($nome);
     $powerzap->set_email($email);
-    $powerzap->set_mensagem($telefone);
+    $powerzap->set_telefone($telefone);
+    $powerzap->set_mensagem($mensagem);
     $powerzap->insert_into_database();
 
     fjson([

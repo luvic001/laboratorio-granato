@@ -5,13 +5,14 @@ if (!defined('PATH')) exit;
 class powerzap {
 
   const WHATSAPP_URL = 'https://api.whatsapp.com/send?phone=%1$s&text=%2$s';
-  const MESSAGE_MODEL = 'Olá, me chamo %s. %s';
+  const MESSAGE_MODEL = 'Me chamo %s. %s';
   const LAB_GRANATO_WHATSAPP_PHONE = '+5521971931590';
   const POWERZAP_TABLE_NAME = 'lab_gra_wpp_request';
 
   public $nome;
   public $email;
   public $mensagem;
+  public $telefone;
 
   protected $db;
 
@@ -40,6 +41,10 @@ class powerzap {
     $this->mensagem = $mensagem;
   }
 
+  public function set_telefone($telefone) {
+    $this->telefone = $telefone;
+  }
+
   protected function get_nome() {
     return $this->nome;
   }
@@ -52,6 +57,10 @@ class powerzap {
     return $this->mensagem;
   }
 
+  protected function get_telefone() {
+    return $this->telefone;
+  }
+
   private function get_date() {
     return date('Y-m-d H:i:s');
   }
@@ -61,6 +70,7 @@ class powerzap {
     $args = [
       'client_name' => self::get_nome(),
       'client_email' => self::get_email(),
+      'client_phone' => self::get_telefone(),
       'client_message' => self::get_mensagem(),
       'INSERT_DATE' => self::get_date(),
     ];
