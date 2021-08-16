@@ -1,0 +1,99 @@
+body
+  &.pwd-dialog-open
+    section.powerzap-gra
+      +opacity(1)
+      .content
+        pointer-events: all
+
+  section.powerzap-gra
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 5000
+    pointer-events: none
+    overflow: auto
+    display: flex
+    +default_transition()
+    +opacity(0)
+    +breakpoint(sm)
+      padding: 1rem 2rem
+      align-items: flex-end
+      justify-content: flex-end
+
+    .glass
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 0
+      width: 100%
+      height: 100%
+
+    .content
+      position: relative
+      z-index: 1
+      max-width: 100%
+      background-color: $branco
+      +shadow(0 0 3px rgba($preto, .5))
+      pointer-events: none
+      overflow-y: auto
+      overflow-x: hidden
+      width: 100%
+      padding: 1rem 1.5rem
+      padding-bottom: 70px
+      +breakpoint(sm)
+        padding-bottom: 1rem
+        width: 360px
+        +border-radius(5px)
+        margin-left: auto
+
+      .pwz-toggle
+        background-color: $azul
+        display: block
+        position: relative
+        text-align: center
+        margin: -1rem -1.5rem
+        margin-bottom: 2rem
+        +font-size(18px)
+        font-weight: 700
+        color: $branco
+        font-family: $font-default
+        padding: 1rem
+        +default_transition()
+        +breakpoint(sm)
+          +border-radius(5px 5px 0 0)
+        &:hover
+          text-decoration: none
+          +filter(brightness(.9))
+
+        span
+          width: 15px
+          height: 3px
+          position: absolute
+          top: 0
+          bottom: 0
+          margin: auto
+          background-color: $branco
+          +border-radius(5px)
+          opacity: 1 !important
+          right: 2rem
+          +breakpoint(sm)
+            right: 1rem
+
+      .pwz-footer
+        margin: -1rem -1.5rem
+        margin-top: 2rem
+        +shadow(0 0 3px rgba($preto, .5))
+        padding: 1rem
+        text-align: right
+        position: fixed
+        bottom: 1rem
+        width: 100%
+        background-color: $branco
+        +breakpoint(sm)
+          +border-radius(0 0 5px 5px)
+          position: relative
+          width: auto
+          bottom: initial
+        

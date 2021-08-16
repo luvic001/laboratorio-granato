@@ -30,6 +30,7 @@ $sitename = get_bloginfo('name') . ' | ' . get_bloginfo('description');
   <style>
     <?= get_file('style.css') ?>
   </style>
+  <script>var adm_ajax = '<?= admin_url('admin-ajax.php') ?>';</script>
   <script type="text/javascript" src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/jQuery.min.js"></script>
   <script type="text/javascript" src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/bootstrap.min.js" async defer></script>
   <script type="text/javascript" src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/script.min.js" async defer></script>
@@ -40,6 +41,7 @@ $sitename = get_bloginfo('name') . ' | ' . get_bloginfo('description');
 <body <?= body_class() ?>>
 
 <?php get_modules('mega-menu') ?>
+<?php get_modules('powerzap-gra') ?>
 
 <main class="site-content">
 

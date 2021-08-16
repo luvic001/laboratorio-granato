@@ -1,0 +1,39 @@
+form
+  p
+    +font-size(14px)
+    font-weight: 700
+    margin-bottom: 10px
+    line-height: 18px
+    span
+      font-weight: 400
+  span.field-error
+    color: #c33
+    +font-size(12px)
+    font-family: $font-default
+    font-weight: 700
+  .input-text
+    margin-bottom: 15px
+    width: 100%
+    input, textarea
+      width: 100%
+      padding: 10px 5px
+      border: 1px solid #CCCCCC
+      +border-radius(3px)
+      &:focus
+        outline-color: $azul
+    textarea
+      height: 100px
+  
+  .input-submit
+    input, button
+      +border-radius(5px)
+      background-color: $azul
+      border: 0
+      +font-size(14px)
+      color: $branco
+      font-weight: 700
+      padding: 10px 20px
+      cursor: pointer
+      &:hover
+        +filter(brightness(.9))
+        +default_transition()

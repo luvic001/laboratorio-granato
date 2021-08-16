@@ -40,10 +40,10 @@
     opacity: 0;
     transition: ease .3s all;
   }
-  body.show-whatsapp-footer-number a span {
+  body.show-whatsapp-footer-number section.floating-footer a span {
     opacity: 1;
   }
-  body.do-not-show-whatsapp-footer-number a span {
+  body.do-not-show-whatsapp-footer-number section.floating-footer a span {
     opacity: 0 !important;
   }
 
@@ -69,15 +69,22 @@
 </section>
 <script>
 jQuery(function($){
-  $(document).on('click', '.bt_whatsapp_flutuante', function(){
+  $(document).on('click', '.bt_whatsapp_flutuante', function(event){
+    event.preventDefault();
     $('body').addClass('do-not-show-whatsapp-footer-number')
+             .addClass('pwd-dialog-open')
              .removeClass('show-whatsapp-footer-number');
 
-    send_meta('bt_whatsapp_flutuante', 'bt_whatsapp_flutuante', 'bt_whatsapp_flutuante');
   });
   window.setTimeout(()=>{
     $('body').addClass('show-whatsapp-footer-number')
   }, 10000);
+
+  $(document).on('click', '[pwd-toggle]', function(event){
+    event.preventDefault();
+    $('body').removeClass('pwd-dialog-open');
+  });
+
 });
 </script>
 

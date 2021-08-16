@@ -14,8 +14,14 @@ if (!defined('PATH')) exit;
       <p class="align-center" style="font-weight: 500;">Estr. da Gávea, 827 A - São Conrado <br>Rio de Janeiro - RJ - CEP: 22610-001</p>
     </div>
 
-    <div class="d-flex justify-content-center mb-3 mb-md-4">
+    <div class="d-flex justify-content-center mb-3 mb-md-2">
       <a href="https://goo.gl/maps/jxRsKDoJxstaS7m46" title="Ver no mapa" target="_blank" class="btn-contato btn-azul mb-3 mb-md-4">VER NO MAPA</a>
+    </div>
+
+    <div class="editor-content">
+      <h4 class="align-center mb-1" style="font-weight: 700; font-size: 20px; color: #189bdb;">Horário de Funcionamento</h4>
+      <p class="align-center">Todos os dias, das 07:00 ás 19:00 <br/>
+      Aberto aos domingos e feriados, inclusive para coletas domiciliares.</p>
     </div>
 
     <div class="d-flex justify-content-md-between justify-content-center whatsapp-phones">
