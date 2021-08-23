@@ -35,7 +35,7 @@ if (!defined('PATH')) exit;
       </p>
       
       <div class="input-submit pwz-footer">
-        <input type="submit" value="Iniciar Atendimento">
+        <input type="submit" value="Abrir WhatsApp">
       </div>
 
     </form>
