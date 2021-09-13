@@ -109,6 +109,16 @@ jQuery(function($){
 </footer>
 
 </main>
+
+<script>
+jQuery(function($){
+    $('#close-popup, .open-popup').on('click', function(){
+      $('.alert-popup').fadeOut()
+    })
+    $('.alert-popup').fadeIn();
+});
+</script>
+
 <?php wp_footer() ?>
 </body>
 </html>
