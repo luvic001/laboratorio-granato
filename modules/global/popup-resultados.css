@@ -85,7 +85,7 @@ section.popup-resultados .content .popup-resultados-content .buttons a {
   transition: ease .3s all;
   margin-bottom: 1rem;
   width: 100%;
-  max-width: 280px
+  max-width: 290px;
 }
 
 @media (min-width: 768px) {

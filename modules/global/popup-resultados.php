@@ -26,11 +26,11 @@ getCurStyleSheet('popup-resultados', 'global');
         </a>
         <a 
           href="https://granato.shiftcloud.com.br/shift/lis/granato/elis/s01.iu.web.Login.cls?config=UNICO" 
-          title="Exames realizados a partir de 10/05/2022"
+          title="Exames realizados a partir de 11/05/2022"
           target="_blank"
           close-popup-resultados>
           Exames realizados a partir de <br/>
-          <b>10/05/2022</b>
+          <b>11/05/2022</b>
         </a>
       </div>
     </div>
