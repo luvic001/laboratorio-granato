@@ -26,9 +26,9 @@ body
       img
         +default_transition()
         height: auto
-        max-width: 100px
+        max-width: 140px
         +breakpoint(sm)
-          max-width: 140px
+          max-width: 201px
     .menu-space
       display: flex
       align-items: center
@@ -66,6 +66,10 @@ body
             color: $azul
             > span
               background-color: $azul
+    a.btn-site
+      +font-size(13px)
+      +breakpoint(sm)
+        +font-size(16px)
   &.body-scrolled
     header.site-header
       background-color: $branco
@@ -81,6 +85,6 @@ body
         padding: 12px 1rem
       .logo-space
         img
-          max-width: 80px
+          max-width: 120px
           +breakpoint(sm)
-            max-width: 110px
+            max-width: 174px

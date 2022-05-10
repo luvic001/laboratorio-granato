@@ -108,7 +108,7 @@ $sitename = get_bloginfo('name') . ' | ' . get_bloginfo('description');
 <header class="site-header">
   <div class="container-fluid d-flex justify-content-between">
     <a href="<?= site_url() ?>" class="logo-space" title="<?= $sitename ?>">
-      <img src="<?= get_image('img-lab.png') ?>" alt="<?= $sitename ?>">
+      <img src="<?= get_image('logo-lab-granato-site.png') ?>" alt="<?= $sitename ?>">
     </a>
     <div class="menu-space">
       <?php /* <a href="http://seulaudo.com.br/granato" target="_blank" class="btn-site btn-header bt_resultados_online" title="Resultados">Resultados</a> */ ?>
